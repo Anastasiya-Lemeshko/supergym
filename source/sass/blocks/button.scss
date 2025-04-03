@@ -1,0 +1,70 @@
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 25px 40px;
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  color: $white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid $white;
+  background-color: $button-bg;
+  cursor: pointer;
+
+  @media #{$tablet-width} {
+    padding: 27px 40px;
+  }
+
+  // &:focus-visible,
+  // &:hover {
+  //   background-color: $accent-middle;
+  //   color: $white;
+  // }
+
+  // &:active {
+  //   background-color: $accent-dark;
+  //   color: $white;
+  // }
+
+  // &:disabled {
+  //   background-color: $grey-basic;
+  //   color: $white;
+  //   pointer-events: none;
+  // }
+}
+
+// .button--disabled {
+//   background-color: $grey-basic;
+//   color: $white;
+//   pointer-events: none;
+//   cursor: default;
+// }
+
+// .button--secondary {
+//   color: $accent-primary;
+//   background-color: $white;
+
+//   &:disabled {
+//     background-color: $grey-middle;
+//   }
+// }
+
+// .button--with-icon {
+//   display: grid;
+//   grid-template-columns: 20px 1fr;
+//   align-items: center;
+//   gap: 6px;
+
+//   &::before {
+//     grid-area: 1 / 1 / 2 / 2;
+//     content: "";
+//     width: 20px;
+//     height: 16px;
+//     background-repeat: no-repeat;
+//     background-size: 20px 16px;
+//     background-position: center;
+//   }
+// }

@@ -1,0 +1,43 @@
+// Fonts
+
+$primary-font: "Roboto Condensed", "Arial", sans-serif;
+$secondary-font: "Alumni Sans", "Arial", sans-serif;
+
+// Colors
+
+$text-basic: #102654;
+$button-bg: transparent;
+$white: #ffffff;
+// $grey-basic: #bdbdbd;
+// $grey-middle: #e2e2e2;
+// $grey-light: #f8f8f8;
+// $accent-dark: #593cac;
+// $accent-primary: #7859cf;
+// $accent-middle: #9070ec;
+// $accent-light: #f0ebff;
+// $accent-opacity: rgba(120, 89, 207, 0.25);
+// $slider-flat-white: #f3ebe1;
+// $slider-lavender: #eae6fc;
+// $slider-espresso: #e5e6e8;
+$gradient-promo: linear-gradient(90deg, #1c3477 0%, #1a3578 40%, #73184b 75%, #b4022a 100%);
+
+// Breakpoint
+
+$breakpoint-desktop: 1366px;
+$breakpoint-tablet: 768px;
+$breakpoint-gap: 0.02px;
+
+// Viewports
+
+$mobile-only: "(max-width: #{$breakpoint-tablet - $breakpoint-gap})";
+$tablet-width: "(min-width: #{$breakpoint-tablet})";
+$tablet-only: "(min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - $breakpoint-gap})";
+$desktop-width: "(min-width: #{$breakpoint-desktop})";
+
+
+// Adaptive sizes
+
+$max-content-width: 1366px;
+$mobile-side: 15px;
+$tablet-side: 45px;
+$desktop-side: 103px;

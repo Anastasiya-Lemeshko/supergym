@@ -1,0 +1,44 @@
+.header {
+  color: $white;
+  background: $gradient-promo;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: $max-content-width;
+  margin: 0 auto;
+  padding: 16px $mobile-side;
+
+  @media #{$tablet-width} {
+    padding: 30px $tablet-side;
+  }
+
+  @media #{$desktop-width} {
+    padding: 30px $desktop-side;
+  }
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.header__phone {
+  font-size: 22px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+
+  @media #{$tablet-width} {
+    font-size: 24px;
+  }
+
+  @media #{$desktop-width} {
+    font-size: 26px;
+  }
+}
