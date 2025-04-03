@@ -1,1 +1,14 @@
+.accordeon__item p {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
 
+.accordeon__item--default-visible p {
+  max-height: initial;
+}
+
+.accordeon__item--active p  {
+  opacity: 1;
+}
