@@ -1,39 +1,39 @@
 // Vendor
 
-@import "vendor/normalize.scss";
-@import "vendor/swiper.scss";
+@import "vendor/normalize";
+@import "vendor/swiper";
 
 // Global
-@import "./common/variables.scss";
-@import "./common/fonts.scss";
-@import "./common/global.scss";
-@import "./common/visually-hidden.scss";
+@import "./common/variables";
+@import "./common/fonts";
+@import "./common/global";
+@import "./common/visually-hidden";
 
 // Blocks
-@import "./blocks/page.scss";
-@import "./blocks/main-container.scss";
-@import "./blocks/button.scss";
-@import "./blocks/input-text.scss";
-@import "./blocks/tabs.scss";
-@import "./blocks/accordeon.scss";
-@import "./blocks/slider-button.scss";
-@import "./blocks/title.scss";
-@import "./blocks/logo-image.scss";
-@import "./blocks/header-nav.scss";
-@import "./blocks/promo.scss";
-@import "./blocks/about.scss";
-@import "./blocks/video.scss";
-@import "./blocks/price.scss";
-@import "./blocks/games.scss";
-@import "./blocks/juri.scss";
-@import "./blocks/features.scss";
-@import "./blocks/offers.scss";
-@import "./blocks/faq.scss";
-@import "./blocks/reviews.scss";
-@import "./blocks/trial.scss";
-@import "./blocks/contacts.scss";
-@import "./blocks/social.scss";
-@import "./blocks/footer.scss";
-// @import "./blocks.scss";
+@import "./blocks/page";
+@import "./blocks/main-container";
+@import "./blocks/button";
+@import "./blocks/input-text";
+@import "./blocks/tabs";
+@import "./blocks/accordeon";
+@import "./blocks/slider-button";
+@import "./blocks/title";
+@import "./blocks/logo-image";
+@import "./blocks/header-nav";
+@import "./blocks/promo";
+@import "./blocks/about";
+@import "./blocks/video";
+@import "./blocks/price";
+@import "./blocks/games";
+@import "./blocks/juri";
+@import "./blocks/features";
+@import "./blocks/offers";
+@import "./blocks/faq";
+@import "./blocks/reviews";
+@import "./blocks/trial";
+@import "./blocks/contacts";
+@import "./blocks/social";
+@import "./blocks/footer";
 
+// @import "./blocks.scss";
 

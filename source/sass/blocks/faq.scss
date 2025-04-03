@@ -180,19 +180,19 @@
   }
 }
 
-.faq__wysiwyg button:focus-visible:before {
+.faq__wysiwyg button:focus-visible::before {
   background-color: $divider;
 }
 
-.faq__wysiwyg button:hover:before {
+.faq__wysiwyg button:hover::before {
   background-color: $accent-dark;
 }
 
-.faq__wysiwyg button:active:before {
+.faq__wysiwyg button:active::before {
   background-color: $accent-dark;
 }
 
-.faq__wysiwyg button:disabled:before {
+.faq__wysiwyg button:disabled::before {
   background-color: transparent;
   opacity: 0.3;
 }

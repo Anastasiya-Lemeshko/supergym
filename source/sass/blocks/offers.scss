@@ -162,7 +162,7 @@
   line-height: var(--text-height);
 }
 
-.offers__wysiwyg p+p {
+.offers__wysiwyg p + p {
   margin-top: 10px;
 }
 
@@ -257,5 +257,6 @@
 
 .offers__main-content .offers__link--disabled {
   --border-color: #{$white};
+
   opacity: 0.5;
 }

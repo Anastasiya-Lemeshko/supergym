@@ -87,7 +87,7 @@
   height: 52px;
   background: var(--circle-color);
   border-radius: 50%;
-  transition: background-color 0.3s;;
+  transition: background-color 0.3s;
 
   @media #{$desktop-width} {
     width: 72px;

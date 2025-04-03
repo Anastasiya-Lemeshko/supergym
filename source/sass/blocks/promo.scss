@@ -92,14 +92,14 @@
 }
 
 .promo__title {
-max-width: 160px;
-margin: 0;
-font-family: $secondary-font;
-font-weight: 800;
-font-size: 62px;
-line-height: 62px;
-letter-spacing: 0.02em;
-text-transform: uppercase;
+  max-width: 160px;
+  margin: 0;
+  font-family: $secondary-font;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 62px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 
   @media #{$tablet-width} {
     grid-area: 2 / 2 / 3 / 3;
@@ -144,7 +144,7 @@ text-transform: uppercase;
 }
 
 .promo__image-wrapper {
-  display: none;;
+  display: none;
 
   @media #{$tablet-width} {
     display: block;

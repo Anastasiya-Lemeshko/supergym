@@ -54,14 +54,14 @@
   @media #{$tablet-width} {
     grid-template-columns: 80px 1fr;
     justify-items: left;
-    gap: 0 40px ;
+    gap: 0 40px;
     max-width: 500px;
     padding: 40px 30px;
     text-align: left;
   }
 
   @media #{$desktop-width} {
-    gap: 0 30px ;
+    gap: 0 30px;
     max-width: 560px;
     padding: 60px;
   }
