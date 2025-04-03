@@ -19,7 +19,7 @@
 }
 
 .features__title {
-  margin: 0 0 39px;
+  margin: 0 0 40px;
   text-align: center;
 
   @media #{$tablet-width} {
@@ -29,7 +29,7 @@
 
 .features__list {
   display: grid;
-  gap: 35px;
+  gap: 34px;
   justify-items: center;
   margin: 0;
   padding: 0;
@@ -37,7 +37,7 @@
 
   @media #{$tablet-width} {
     grid-template-columns: 1fr 1fr;
-    gap: 40px 30px;
+    gap: 39px 30px;
   }
 
   @media #{$desktop-width} {
@@ -172,7 +172,7 @@
   color: $text-special-dark;
 
   @media #{$tablet-width} {
-    line-height: 22px;
+    line-height: 23px;
   }
 }
 
@@ -208,7 +208,7 @@
 }
 
 .features__wysiwyg--special dd {
-  margin: 0 0 5px;
+  margin: 0 0 6px;
   color: $white;
 
   @media #{$tablet-width} {
@@ -222,7 +222,7 @@
 
 
 .features__wysiwyg h3 {
-  margin: 0;
+  margin: 0 0 1px;
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;

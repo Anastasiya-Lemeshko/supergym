@@ -1,3 +1,4 @@
+import './modules/scroll.js';
 import './modules/constants.js';
 import './modules/slider.js';
 import {openVisibleAccordeonContent, setAccordeonToggles} from './modules/accordeon.js';

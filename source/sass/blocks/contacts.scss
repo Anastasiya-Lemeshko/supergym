@@ -1,8 +1,8 @@
 .contacts {
-  padding: 37px $mobile-side 40px;
+  padding: 37px $mobile-side 39px;
 
   @media #{$tablet-width} {
-    padding: 58px 164px 60px;
+    padding: 60px 164px 59px;
   }
 
   @media #{$desktop-width} {
@@ -14,12 +14,12 @@
   margin: 0 0 37px;
 
   @media #{$tablet-width} {
+    margin: 0 0 36px;
     font-size: 54px;
     text-align: center;
   }
 
   @media #{$desktop-width} {
-    margin: 0 0 36px;
     text-align: left;
   }
 }
@@ -32,7 +32,7 @@
 
   @media #{$tablet-width} {
     grid-template-columns: 1fr 1fr;
-    gap: 15px 60px;
+    gap: 14px 60px;
   }
 
   @media #{$desktop-width} {
@@ -52,7 +52,7 @@
 
 .contacts__item:not(:last-child) {
   @media #{$mobile-only} {
-    margin-bottom: 28px;
+    margin-bottom: 27px;
   }
 }
 
@@ -83,13 +83,13 @@
 }
 
 .contacts__subtitle {
-  margin: 0 0 12px;
+  margin: 0 0 13px;
   font-weight: 400;
   font-size: 20px;
   line-height: 1;
 
   @media #{$tablet-width} {
-    margin: 0 0 5px;
+    margin: 0 0 6px;
     font-size: 24px;
   }
 }

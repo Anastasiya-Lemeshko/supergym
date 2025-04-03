@@ -8,7 +8,7 @@
     grid-template-columns: 1fr 378px;
     justify-content: center;
     max-width: 756px;
-    padding: 62px $tablet-side;
+    padding: 60px $tablet-side 62px;
   }
 
   @media #{$desktop-width} {

@@ -13,7 +13,7 @@
   transition: outline 0.3s, border 0.3s;
 
   @media #{$tablet-width} {
-    font-weight: 400;
+    padding: 4px 0 3px;
   }
 
   &:hover {

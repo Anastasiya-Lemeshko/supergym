@@ -6,14 +6,15 @@
 .footer__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 24px;
   padding: 40px $mobile-side;
   background-color: $bg-dark;
 
   @media #{$tablet-width} {
     flex-direction: row;
     justify-content: space-between;
-    padding: 45px $tablet-side;
+    gap: 25px;
+    padding: 45px $tablet-side 42px;
   }
 
   @media #{$desktop-width} {
@@ -25,18 +26,17 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px 16px;
-  margin: 0 0 0 -10px;
+  margin: 2px 0 0 -10px;
   padding: 0;
   list-style-type: none;
 
   @media #{$tablet-width} {
     gap: 10px 11px;
-    margin: -5px 0 0 -1px;
+    margin: -4px 0 0 -1px;
   }
 
   @media #{$desktop-width} {
     gap: 10px 63px;
-    margin: -4px 0 0 -1px;
   }
 }
 

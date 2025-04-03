@@ -3,7 +3,7 @@
 }
 
 .trial__wrapper {
-  padding: 70px $mobile-side;
+  padding: 71px $mobile-side 70px;
   color: $white;
   background-color: $text-basic;
 
@@ -17,9 +17,10 @@
 }
 
 .trial__title {
-  margin: 0 0 32px;
+  margin: 0 0 31px;
 
   @media #{$tablet-width} {
+    margin: 0 0 33px;
     font-size: 54px;
     text-align: center;
   }
@@ -38,14 +39,14 @@
 .trial__list {
   display: grid;
   gap: 10px;
-  margin: 0 0 15px;
+  margin: 0 0 14px;
   padding: 0;
   list-style-type: none;
 
   @media #{$tablet-width} {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    margin: 0 0 14px;
+    margin: 0 0 13px;
   }
 }
 
@@ -58,10 +59,6 @@
   padding: 22px;
 
   @media #{$tablet-width} {
-    padding: 26px;
-  }
-
-  @media #{$desktop-width} {
-    padding: 26px 23px 23px;
+    padding: 26px 24px 24px;
   }
 }

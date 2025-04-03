@@ -9,7 +9,7 @@
   align-items: center;
   max-width: $max-content-width;
   margin: 0 auto;
-  padding: 16px $mobile-side;
+  padding: 15px $mobile-side 18px;
 
   @media #{$tablet-width} {
     padding: 30px $tablet-side;

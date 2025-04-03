@@ -1,12 +1,12 @@
 .reviews {
-  padding: 41px 40px 0;
+  padding: 41px 0 0;
 
   @media #{$tablet-width} {
     padding: 60px 20px 20px;
   }
 
   @media #{$desktop-width} {
-    padding: 98px $desktop-side 60px;
+    padding: 101px $desktop-side 61px;
   }
 }
 
@@ -32,7 +32,7 @@
 }
 
 .reviews__swiper {
-  padding: 40px 0;
+  padding: 39px 0 40px;
 
   @media #{$tablet-only} {
     padding: 35px 0 40px;
@@ -43,9 +43,10 @@
   display: grid;
   justify-items: center;
   max-width: 500px;
+  width: calc(100% - 40px * 2);
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 30px 25px;
+  padding: 30px 25px 29px;
   background-color: $accent-dark;
   color: $white;
   text-align: center;
@@ -56,6 +57,7 @@
     justify-items: left;
     gap: 0 40px;
     max-width: 500px;
+    width: initial;
     padding: 40px 30px;
     text-align: left;
   }
@@ -83,13 +85,13 @@
 }
 
 .reviews__wysiwyg h3 {
-  margin: 0 0 16px;
+  margin: 0 0 17px;
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
 
   @media #{$tablet-width} {
-    margin: 0 0 20px;
+    margin: 1px 0 19px;
     font-size: 22px;
     line-height: 1;
   }
