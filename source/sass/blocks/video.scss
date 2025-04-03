@@ -1,0 +1,105 @@
+.video {
+  display: grid;
+  grid-template-columns: max-content;
+}
+
+.video__wrapper {
+  position: relative;
+  grid-area: 1 / 1 / -1 / -1;
+}
+
+.video__wrapper::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 54, 122, 0.5);
+}
+
+.video__image {
+  display: block;
+}
+
+.video__button {
+  --border-color: rgba(237, 2, 51, 0.2);
+  --circle-color: linear-gradient(96deg, #ed0233 0%, #ed0233 20%, #003eb7 95%, #003eb7 100%);
+  --triangle-color: #{$white};
+
+  box-sizing: border-box;
+  position: relative;
+  grid-area: 1 / 1 / -1 / -1;
+  justify-self: center;
+  align-self: center;
+  width: 72px;
+  height: 72px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+  z-index: 1;
+  cursor: pointer;
+
+  @media #{$desktop-width} {
+    width: 100px;
+    height: 100px;
+  }
+
+  &:focus-visible {
+    --border-color: #{$text-basic};
+    --circle-color: #{$grey-basic};
+    --triangle-color: #{$text-basic};
+  }
+
+  &:hover {
+    --border-color: rgba(16, 38, 84, 0.6);
+    --circle-color: #{$white};
+    --triangle-color: rgba(16, 38, 84, 0.6);
+  }
+
+  &:active {
+    --border-color: #{$text-basic};
+    --circle-color: #{$white};
+    --triangle-color: #{$text-basic};
+  }
+
+  &:disabled {
+    --border-color: rgba(16, 38, 84, 0.4);
+    --circle-color: #{$white};
+    --triangle-color: rgba(16, 38, 84, 0.4);
+    pointer-events: none;
+  }
+}
+
+.video__button::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 52px;
+  height: 52px;
+  background: var(--circle-color);
+  border-radius: 50%;
+
+  @media #{$desktop-width} {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.video__button::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-19%, -50%);
+  content: "";
+  border: 5px solid transparent;
+  border-left: 9px solid var(--triangle-color);
+
+  @media #{$desktop-width} {
+    border: 8px solid transparent;
+    border-left: 12px solid var(--triangle-color);
+  }
+}
