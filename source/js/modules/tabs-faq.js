@@ -8,14 +8,11 @@ const openFaqTabs = (evt) => {
   const btnTarget = evt.currentTarget;
   const question = btnTarget.dataset.question;
 
-  setTabLinks();
+  setTabLinks(tabLinks, btnTarget);
 
   tabContents.forEach((item) => {
     item.classList.remove('tabs__tabcontent--active');
   });
-
-  const newClassArray = [...btnTarget.classList].map((classItem) => classItem + '--active');
-  btnTarget.classList.add(...newClassArray);
 
   faq.querySelector(`#${question}`).classList.add('tabs__tabcontent--active');
 };

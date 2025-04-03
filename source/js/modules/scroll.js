@@ -4,8 +4,8 @@ const priceContainer = document.querySelector('.price');
 const scrollToElement = (button, element) => {
   button.addEventListener('click', () => {
     element.scrollIntoView({
-      block: "start",
-      behavior: "smooth"
+      block: 'start',
+      behavior: 'smooth'
     });
   });
 };

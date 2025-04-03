@@ -2,7 +2,7 @@ const openVisibleAccordeonContent = () => {
   const accordeonVisibleContent = document.querySelectorAll('.accordeon__item--active p');
 
   accordeonVisibleContent.forEach((element) => {
-    element.style.maxHeight = element.scrollHeight + "px";
+    element.style.maxHeight = `${element.scrollHeight }px`;
   });
 };
 
@@ -14,8 +14,8 @@ const setAccordeonToggles = () => {
   let activeClass = [...accordeonItem.classList].filter((item) => item.includes('__item') && !item.includes('--active') && !item.includes('accordeon'));
   activeClass += '--active';
 
-  accordeonList.forEach((accordeonItem) => {
-    accordeonTitles.push(...accordeonItem.querySelectorAll('.accordeon__item button'));
+  accordeonList.forEach((item) => {
+    accordeonTitles.push(...item.querySelectorAll('.accordeon__item button'));
   });
 
   accordeonTitles.forEach((accordeonTitle) => {
@@ -31,7 +31,7 @@ const setAccordeonToggles = () => {
       currentItem.classList.toggle(activeClass);
 
       if (currentItem.classList.contains('accordeon__item--active')) {
-        currentContent.style.maxHeight = currentContent.scrollHeight + "px";
+        currentContent.style.maxHeight = `${currentContent.scrollHeight }px`;
       } else {
         currentContent.style.maxHeight = null;
       }

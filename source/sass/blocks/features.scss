@@ -160,6 +160,8 @@
 }
 
 .features__wysiwyg--special dl {
+  align-items: center;
+
   @media #{$tablet-width} {
     align-self: center;
   }

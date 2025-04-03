@@ -11,7 +11,7 @@ const openPriceTabs = (evt) => {
   const btnTarget = evt.currentTarget;
   const period = btnTarget.dataset.price;
 
-  setTabLinks();
+  setTabLinks(tabLinks, btnTarget);
 
   priceCards.forEach((item) => {
     const priceValue = item.querySelector('.price__value');
@@ -29,13 +29,13 @@ tabLinks.forEach((tablink) => {
 });
 
 priceValues.forEach((item) => {
-  item.addEventListener("animationend", () => {
+  item.addEventListener('animationend', () => {
     item.classList.remove('price__value--animated');
   });
 });
 
 priceBgs.forEach((item) => {
-  item.addEventListener("animationend", () => {
+  item.addEventListener('animationend', () => {
     item.classList.remove('price__bg--animated');
   });
 });

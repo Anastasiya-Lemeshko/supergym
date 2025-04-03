@@ -1,25 +1,33 @@
-const juriSwiper = new Swiper('.juri__swiper', {
-  direction: 'horizontal',
-  loop: true,
-  spaceBetween: 40,
+import Swiper from './../vendor/swiper.js';
 
-  navigation: {
-    nextEl: '.juri__button--next',
-    prevEl: '.juri__button--prev',
-  },
+const initJuriSwiper = () => {
+  new Swiper('.juri__swiper', {
+    direction: 'horizontal',
+    loop: true,
+    spaceBetween: 40,
 
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
+    navigation: {
+      nextEl: '.juri__button--next',
+      prevEl: '.juri__button--prev',
     },
 
-    768: {
-      slidesPerView: 2,
-    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        allowTouchMove: true,
+      },
 
-    1366: {
-      slidesPerView: 4,
+      768: {
+        slidesPerView: 2,
+        allowTouchMove: false,
+      },
+
+      1366: {
+        slidesPerView: 4,
+        allowTouchMove: false,
+      }
     }
-  }
-});
+  });
+};
 
+export { initJuriSwiper };

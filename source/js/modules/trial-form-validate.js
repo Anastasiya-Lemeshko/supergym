@@ -44,4 +44,3 @@ trialFields.forEach((field) => {
     input.classList.remove('input-text__input--error');
   });
 });
-

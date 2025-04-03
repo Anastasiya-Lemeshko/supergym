@@ -14,9 +14,10 @@ const createIframe = (iframeWrap, section) => {
   iframe.height = '100%';
   iframe.allowFullscreen = true;
   iframe.frameborder = '0';
+  iframe.style.border = '0';
   iframeWrap.append(iframe);
   iframeWrap.classList.remove('video__iframe-wrap--hidden');
-}
+};
 
 aboutPlayButton.addEventListener('click', () => {
   createIframe(aboutIframeWrap, 'about');

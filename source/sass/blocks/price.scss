@@ -59,7 +59,7 @@
   }
 }
 
-.price__tablink {
+.price__tablink-item {
   position: relative;
   font-weight: 400;
   font-size: 16px;
@@ -75,7 +75,7 @@
   }
 }
 
-.price__tablink-button {
+.price__tablink {
   --border-color: #{$price-border};
 
   margin: 0;
@@ -122,7 +122,7 @@
   }
 }
 
-.price__tablink-button::before {
+.price__tablink::before {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -133,7 +133,7 @@
   transition: background-color 0.3s;
 }
 
-.price__tablink:not(:last-child) .price__tablink-button::after {
+.price__tablink-item:not(:last-child) .price__tablink::after {
   position: absolute;
   bottom: 0;
   left: 100%;
@@ -143,7 +143,7 @@
   background-color: $price-border;
 }
 
-.price__tablink--active .price__tablink-button {
+.price__tablink--active {
   --border-color: #{$price-border-active};
 
   color: $text-basic;
@@ -222,21 +222,26 @@
   justify-content: space-between;
   gap: 18px;
   width: 290px;
-  padding: 50px 20px;
+  padding: 43px 20px;
   background-color: $white;
+  border: 7px solid transparent;
   overflow: hidden;
   z-index: 1;
 
   @media #{$tablet-width} {
     gap: 22px;
     width: 380px;
-    padding: 65px 30px;
+    padding: 58px 30px;
   }
 
   @media #{$desktop-width} {
     gap: 17px;
     width: 360px;
   }
+}
+
+.price__content-item:focus-within {
+  border-image: linear-gradient(135deg, #d10a42 0%, #00359f 100%) 1;
 }
 
 .price__content-wrapper {

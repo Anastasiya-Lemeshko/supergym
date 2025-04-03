@@ -84,16 +84,16 @@
   }
 }
 
-.about__wysiwyg p+p {
-  margin-top: 7px;
-}
-
-.about__no-display {
+.about__wysiwyg p:not(:first-child) {
   display: none;
 
   @media #{$desktop-width} {
     display: block;
   }
+}
+
+.about__wysiwyg p + p {
+  margin-top: 7px;
 }
 
 .about__image-wrapper {
