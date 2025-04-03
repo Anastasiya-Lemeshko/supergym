@@ -1,9 +1,9 @@
-.header {
+.header-nav {
   color: $white;
   background: $gradient-promo;
 }
 
-.header__wrapper {
+.header-nav__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,13 +20,13 @@
   }
 }
 
-.header__contacts {
+.header-nav__contacts {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.header__phone {
+.header-nav__phone {
   font-size: 22px;
   line-height: 1;
   font-style: normal;

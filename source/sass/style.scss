@@ -1,7 +1,7 @@
 // Vendor
 
-@import "vendor/normalize";
-
+@import "vendor/normalize.scss";
+@import "vendor/swiper.scss";
 
 // Global
 @import "./common/variables.scss";
@@ -16,14 +16,14 @@
 @import "./blocks/title.scss";
 @import "./blocks/tabs.scss";
 @import "./blocks/logo-image.scss";
-@import "./blocks/header.scss";
+@import "./blocks/header-nav.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/about.scss";
 @import "./blocks/video.scss";
 @import "./blocks/price.scss";
-// @import "./blocks.scss";
-// @import "./blocks.scss";
+@import "./blocks/games.scss";
+@import "./blocks/juri.scss";
 // @import "./blocks.scss";
 // @import "./blocks.scss";
 // @import "./blocks.scss";

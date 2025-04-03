@@ -1,0 +1,45 @@
+.juri {
+  padding: 40px $mobile-side;
+
+  @media #{$tablet-width} {
+    padding: 30px $tablet-side 60px;
+  }
+
+  @media #{$desktop-width} {
+    padding: 100px $desktop-side;
+  }
+}
+
+.juri__swiper {
+  width: 678px;
+}
+
+.juri__slide {
+  width: 260px;
+}
+
+.juri__image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.juri__slide {
+  width: 260px;
+}
+
+.juri__icon {
+  @media #{$mobile-only} {
+    display: none;
+  }
+}
+
+.juri__swiper-container {
+  position: relative;
+}
+
+.juri__button--prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+

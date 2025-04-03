@@ -11,21 +11,21 @@
 <body class="page__body">
 
 
-  <div class="hero">
-    <header class="header hero__header">
-      <div class="header__wrapper">
-        <div class="header__logo logo-image">
+  <header class="hero">
+    <nav class="header-nav hero__header">
+      <div class="header-nav__wrapper">
+        <div class="header-nav__logo logo-image">
           <picture>
             <source width="130" height="26" type="image/svg+xml" media="(min-width: 1366px)" srcset="img/logo.svg">
             <source width="110" height="22" type="image/svg+xml" media="(min-width: 768px)" srcset="img/logo.svg">
             <img class="logo-image__image" src="img/logo.svg" width="100" height="20" alt="Логотип фитнес-центра Sypergym.">
           </picture>
         </div>
-        <address class="header__contacts">
-          <a class="header__phone" href="tel:+78005555555">8 800 555-55-55</a>
+        <address class="header-nav__contacts">
+          <a class="header-nav__phone" href="tel:+78005555555">8 800 555-55-55</a>
         </address>
       </div>
-    </header>
+    </nav>
     <section class="hero__content promo">
       <div class="promo__wrapper">
         <div class="promo__content">
@@ -48,7 +48,7 @@
         </div>
       </div>
     </section>
-  </div>
+  </header>
   <main class="main-container">
     <section class="about" data-test="about">
       <div class="about__content">
@@ -90,14 +90,14 @@
         <h2 class="price__title title">Абонементы</h2>
         <div class="price__tabs tabs">
           <ol class="price__tablinks tabs__tablinks">
-            <li class="price__tablink-item">
-              <button class="price__tablink price__tablink--active tabs__tablink tabs__tablink--active" type="button">1 месяц</button>
+            <li class="price__tablink price__tablink--active tabs__tablink tabs__tablink--active">
+              <button class="price__tablink-button " type="button">1 месяц</button>
             </li>
-            <li class="price__tablink-item">
-              <button class="price__tablink tabs__tablink" type="button">6 месяцев</button>
+            <li class="price__tablink tabs__tablink">
+              <button class="price__tablink-button " type="button">6 месяцев</button>
             </li>
-            <li class="price__tablink-item">
-              <button class="price__tablink tabs__tablink" type="button">12 месяцев</button>
+            <li class="price__tablink tabs__tablink">
+              <button class="price__tablink-button" type="button">12 месяцев</button>
             </li>
           </ol>
           <ol class="price__content tabs__list">
@@ -108,7 +108,7 @@
                 <p class="price__value">5000</p>
                 <p class="price__bg" aria-hidden="true">5000</p>
               </div>
-              <button class="price__button button" type="button">Купить абонемент</button>
+              <button class="price__button button button--secondary" type="button">Купить абонемент</button>
             </li>
             <li class="price__content-item">
               <h3 class="price__subtitle">Дневной</h3>
@@ -117,7 +117,7 @@
                 <p class="price__value">1700</p>
                 <p class="price__bg" aria-hidden="true">1700</p>
               </div>
-              <button class="price__button button" type="button">Купить абонемент</button>
+              <button class="price__button button button--secondary" type="button">Купить абонемент</button>
             </li>
             <li class="price__content-item">
               <h3 class="price__subtitle">Полный день</h3>
@@ -126,14 +126,103 @@
                 <p class="price__value">2700</p>
                 <p class="price__bg" aria-hidden="true">2700</p>
               </div>
-              <button class="price__button button" type="button">Купить абонемент</button>
+              <button class="price__button button button--secondary" type="button">Купить абонемент</button>
             </li>
           </ol>
         </div>
       </div>
     </section>
+    <section class="games" data-test="games">
+      <div class="games__wrapper">
+        <div class="games__content">
+          <h2 class="games__title">SUPER <br>GAMES</h2>
+          <div class="games__timetable">
+            <dl class="games__item games__item--date">
+              <dt class="games__term">Дата</dt>
+              <dd class="games__description games__description--date">
+                <span class="games__description-big">7</span>
+                <span class="games__description-small">Марта</span>
+                <span class="games__description-small">2019</span>
+              </dd>
+            </dl>
+            <dl class="games__item games__item--time">
+              <dt class="games__term">Время</dt>
+              <dd class="games__description">12:00</dd>
+            </dl>
+          </div>
+          <p class="games__text">Ежегодные соревнования по CrossFit</p>
+          <a class="games__button button" href="#">заполнить заявку</a>
+        </div>
+        <div class="games__image-wrapper">
+          <picture>
+            <source width="660" height="500" type="image/webp" media="(min-width: 1366px)" srcset="img/games/games-desktop@1x.webp 1x, img/games/games-desktop@2x.webp 2x">
+            <source width="378" height="348" type="image/jpg" media="(min-width: 768px)" srcset="img/games/games-tablet@1x.webp 1x, img/games/games-tablet@2x.webp 2x">
+            <source width="290" height="290" type="image/webp" srcset="img/games/games-mobile@1x.webp 1x, img/games/games-mobile@2x.webp 2x">
+            <source width="660" height="500" type="image/jpg" media="(min-width: 1366px)" srcset="img/games/games-desktop@1x.jpg 1x, img/games/games-desktop@2x.jpg 2x">
+            <source width="378" height="348" type="image/jpg" media="(min-width: 768px)" srcset="img/games/games-tablet@1x.jpg 1x, img/games/games-tablet@2x.jpg 2x">
+            <img class="games__image" src="img/games/games-mobile@1x.jpg" srcset="img/games/games-mobile@2x.jpg 2x" width="290" height="290" alt="Изображение мужчины на тренировке.">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="juri" data-test="juri">
+      <h2 class="juri__title title">Жюри</h2>
+      <div class="juri__swiper-container">
+        <div class="juri__swiper swiper">
+          <div class="juri__swiper-wrapper swiper-wrapper">
+            <div class="juri__slide swiper-slide">
+              <div class="juri__image-wrapper">
+                <picture>
+                  <source width="260" height="300" type="image/webp" srcset="img/juri/anna@1x.webp 1x, img/juri/anna@2x.webp 2x">
+                  <img class="juri__image" src="img/juri/anna@1x.jpg" srcset="img/juri/anna@2x.jpg 2x" width="260" height="300" alt="Анна Павлова.">
+                </picture>
+              </div>
+            </div>
+            <div class="juri__slide swiper-slide">
+              <div class="juri__image-wrapper">
+                <picture>
+                  <source width="260" height="300" type="image/webp" srcset="img/juri/alex@1x.webp 1x, img/juri/alex@2x.webp 2x">
+                  <img class="juri__image" src="img/juri/alex@1x.jpg" srcset="img/juri/alex@2x.jpg 2x" width="260" height="300" alt="Анна Павлова.">
+                </picture>
+              </div>
+            </div>
+            <div class="juri__slide swiper-slide">
+              <div class="juri__image-wrapper">
+                <picture>
+                  <source width="260" height="300" type="image/webp" srcset="img/juri/alexandr@1x.webp 1x, img/juri/alexandr@2x.webp 2x">
+                  <img class="juri__image" src="img/juri/alexandr@1x.jpg" srcset="img/juri/alexandr@2x.jpg 2x" width="260" height="300" alt="Анна Павлова.">
+                </picture>
+              </div>
+            </div>
+            <div class="juri__slide swiper-slide">
+              <div class="juri__image-wrapper">
+                <picture>
+                  <source width="260" height="300" type="image/webp" srcset="img/juri/maria@1x.webp 1x, img/juri/maria@2x.webp 2x">
+                  <img class="juri__image" src="img/juri/maria@1x.jpg" srcset="img/juri/maria@2x.jpg 2x" width="260" height="300" alt="Анна Павлова.">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class=" juri__button juri__button--prev swiper-button-prev">
+            <svg class="juri__icon" aria-hidden="true" focusable="false" width="16" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 32">
+              <use href="/__spritemap#sprite-swiper-arrow"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg class="juri__icon" aria-hidden="true" focusable="false" width="16" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 32">
+              <use href="/__spritemap#sprite-swiper-arrow"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </section>
   </main>
   <footer class="footer"></footer>
+
+
+
+
 
 
 
@@ -155,6 +244,7 @@
   <div data-test="form">form</div>
   <div data-test="footer">footer</div> -->
   <script type="module" src="js/main.js"></script>
+  <script src="js/vendor/swiper.js"></script>
 </body>
 
 </html>
