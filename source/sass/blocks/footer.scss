@@ -4,6 +4,7 @@
 }
 
 .footer__wrapper {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -18,8 +19,14 @@
   }
 
   @media #{$desktop-width} {
+    max-width: $max-content-width;
+    margin: 0 auto;
     padding: 40px $desktop-side;
   }
+}
+
+.footer__logo {
+  flex-shrink: 0;
 }
 
 .footer__list {

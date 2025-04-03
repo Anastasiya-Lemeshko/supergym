@@ -9,7 +9,6 @@ const openVisibleAccordeonContent = () => {
 const setAccordeonToggles = () => {
   const accordeonList = document.querySelectorAll('.accordeon');
   const accordeonItem = document.querySelector('.accordeon__item');
-  const accordeonVisibleContent = document.querySelectorAll('.accordeon__item--active p');
   const accordeonTitles = [];
 
   let activeClass = [...accordeonItem.classList].filter((item) => item.includes('__item') && !item.includes('--active') && !item.includes('accordeon'));

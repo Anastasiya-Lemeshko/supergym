@@ -3,6 +3,7 @@
 }
 
 .faq__wrapper {
+  box-sizing: border-box;
   padding: 71px $mobile-side 70px;
   background-color: $bg-light;
 
@@ -11,6 +12,8 @@
   }
 
   @media #{$desktop-width} {
+    max-width: $max-content-width;
+    margin: 0 auto;
     padding: 100px $desktop-side;
   }
 }
@@ -65,6 +68,7 @@
   box-sizing: border-box;
   width: 100%;
   max-width: 245px;
+  height: 100%;
   padding: 13px;
   font-weight: 400;
   font-size: 16px;
@@ -80,6 +84,7 @@
 
   @media #{$desktop-width} {
     max-width: 260px;
+    height: initial;
     padding: 20px 13px 13px;
   }
 

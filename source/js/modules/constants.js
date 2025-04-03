@@ -6,5 +6,31 @@ export const VIDEO__TITLES = {
   'about': 'Видео о тренажёрном зале.',
 };
 
-export const NAME_STANDARD = /^[a-zа-яё\s]+$/i;
-export const PHONE_STANDARD = /^\d+$/;
+export const ALL__PRICES = {
+  'one-month': {
+    'price-coach': '5000',
+    'price-day': '1700',
+    'price-full': '2700',
+  },
+  'six-month': {
+    'price-coach': '30000',
+    'price-day': '10200',
+    'price-full': '16200',
+  },
+  'twelve-month': {
+    'price-coach': '60000',
+    'price-day': '20400',
+    'price-full': '32400',
+  },
+};
+
+export const ERROR_TEXT = {
+  'empty': 'Это обязательное поле',
+  'name': 'Разрешены только буквы и пробелы',
+  'phone': 'Разрешены только цифры',
+};
+
+export const FIELD__STANDARD = {
+  'name': /^[a-zа-яё\s]+$/i,
+  'phone': /^\d+$/,
+};

@@ -6,11 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUPERGYM</title>
   <link rel="stylesheet" href="sass/style.scss">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/alumni-sans/alumni-sans-semi-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni-sans/alumni-sans-extra-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
-
 <body class="page__body">
-
-
   <header class="hero" data-test="hero">
     <nav class="header-nav">
       <div class="header-nav__wrapper">
@@ -70,7 +76,7 @@
         </picture>
       </div>
       <div class="about__video video">
-        <div class="video__wrapper">
+        <div class="about__video-wrapper video__wrapper">
           <picture>
             <source width="360" height="230" type="image/webp" media="(min-width: 1366px)" srcset="img/about/gym-video-desktop@1x.webp 1x, img/about/gym-video-desktop@2x.webp 2x">
             <source width="270" height="170" type="image/jpg" media="(min-width: 768px)" srcset="img/about/gym-video-tablet@1x.webp 1x, img/about/gym-video-tablet@2x.webp 2x">
@@ -103,31 +109,43 @@
           </ol>
           <ol class="price__content">
             <li class="price__content-item" id="price-coach">
-              <h3 class="price__subtitle">С тренером</h3>
-              <p class="price__text">12 занятий</p>
-              <div class="price__value-wrapper">
-                <p class="price__value">5000</p>
-                <p class="price__bg" aria-hidden="true">5000</p>
+              <div class="price__content-wrapper">
+                <h3 class="price__subtitle">С тренером</h3>
+                <p class="price__text">12 занятий</p>
               </div>
-              <a class="price__button button button--secondary" href="#">Купить абонемент</a>
+              <div class="price__content-wrapper">
+                <div class="price__value-wrapper">
+                  <p class="price__value">5000</p>
+                  <p class="price__bg" aria-hidden="true">5000</p>
+                </div>
+                <a class="price__button button button--secondary" href="#">Купить абонемент</a>
+              </div>
             </li>
             <li class="price__content-item" id="price-day">
-              <h3 class="price__subtitle">Дневной</h3>
-              <p class="price__text">с 8:00 до 17:00</p>
-              <div class="price__value-wrapper">
-                <p class="price__value">1700</p>
-                <p class="price__bg" aria-hidden="true">1700</p>
+              <div class="price__content-wrapper">
+                <h3 class="price__subtitle">Дневной</h3>
+                <p class="price__text">с 8:00 до 17:00</p>
               </div>
-              <a class="price__button button button--secondary" href="#">Купить абонемент</a>
+              <div class="price__content-wrapper">
+                <div class="price__value-wrapper">
+                  <p class="price__value">1700</p>
+                  <p class="price__bg" aria-hidden="true">1700</p>
+                </div>
+                <a class="price__button button button--secondary" href="#">Купить абонемент</a>
+              </div>
             </li>
             <li class="price__content-item" id="price-full">
-              <h3 class="price__subtitle">Полный день</h3>
-              <p class="price__text">с 8:00 до 22:00</p>
-              <div class="price__value-wrapper">
-                <p class="price__value">2700</p>
-                <p class="price__bg" aria-hidden="true">2700</p>
+              <div class="price__content-wrapper">
+                <h3 class="price__subtitle">Полный день</h3>
+                <p class="price__text">с 8:00 до 22:00</p>
               </div>
-              <a class="price__button button button--secondary" href="#">Купить абонемент</a>
+              <div class="price__content-wrapper">
+                <div class="price__value-wrapper">
+                  <p class="price__value">2700</p>
+                  <p class="price__bg" aria-hidden="true">2700</p>
+                </div>
+                <a class="price__button button button--secondary" href="#">Купить абонемент</a>
+              </div>
             </li>
           </ol>
         </div>
@@ -586,7 +604,7 @@
       <section class="trial">
         <div class="trial__wrapper">
           <h2 class="trial__title title">Бесплатное занятие</h2>
-          <form class="trial__form" action="https://echo.htmlacademy.ru/" method="post" novalidate>
+          <form class="trial__form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="trial__group">
               <legend class="visually-hidden">Контактные данные.</legend>
               <ul class="trial__list">

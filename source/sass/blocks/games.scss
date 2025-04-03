@@ -49,6 +49,7 @@
   font-size: 48px;
   line-height: 54px;
   text-transform: uppercase;
+  word-break: break-word;
 
   @media #{$desktop-width} {
     font-size: 82px;

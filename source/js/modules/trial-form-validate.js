@@ -1,17 +1,11 @@
+import {
+  ERROR_TEXT,
+  FIELD__STANDARD
+} from './constants.js';
+
 const trial = document.querySelector('.trial');
 const trialForm = trial.querySelector('.trial__form');
 const trialFields = trialForm.querySelectorAll('.trial__item');
-
-const ERROR_TEXT = {
-  'empty': 'Это обязательное поле',
-  'name': 'Разрешены только буквы и пробелы',
-  'phone': 'Разрешены только цифры',
-};
-
-const FIELD__STANDARD = {
-  'name': /^[a-zа-яё\s]+$/i,
-  'phone': /^\d+$/,
-};
 
 const validateName = () => {
   let IsValid = true;

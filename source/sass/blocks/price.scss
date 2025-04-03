@@ -41,7 +41,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 46px;
+  gap: 20px 46px;
   max-width: 1000px;
   margin: 0 auto 31px;
   padding: 0;
@@ -216,12 +216,15 @@
 
 .price__content-item {
   box-sizing: border-box;
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   gap: 18px;
   width: 290px;
   padding: 50px 20px;
   background-color: $white;
+  overflow: hidden;
   z-index: 1;
 
   @media #{$tablet-width} {
@@ -233,6 +236,21 @@
   @media #{$desktop-width} {
     gap: 17px;
     width: 360px;
+  }
+}
+
+.price__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+
+  @media #{$tablet-width} {
+    gap: 22px;
+  }
+
+  @media #{$desktop-width} {
+    gap: 17px;
   }
 }
 

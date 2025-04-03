@@ -1,28 +1,11 @@
-import { setTabLinks } from './set-tablinks';
+import { setTabLinks } from './set-tablinks.js';
+import { ALL__PRICES } from './constants.js';
 
 const price = document.querySelector('.price');
 const tabLinks = price.querySelectorAll('.tabs__tablink');
 const priceCards = price.querySelectorAll('.price__content-item');
 const priceValues = price.querySelectorAll('.price__value');
 const priceBgs = price.querySelectorAll('.price__bg');
-
-const ALL__PRICES = {
-  'one-month': {
-    'price-coach': '5000',
-    'price-day': '1700',
-    'price-full': '2700',
-  },
-  'six-month': {
-    'price-coach': '30000',
-    'price-day': '10200',
-    'price-full': '16200',
-  },
-  'twelve-month': {
-    'price-coach': '60000',
-    'price-day': '20400',
-    'price-full': '32400',
-  },
-};
 
 const openPriceTabs = (evt) => {
   const btnTarget = evt.currentTarget;

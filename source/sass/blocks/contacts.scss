@@ -1,4 +1,5 @@
 .contacts {
+  box-sizing: border-box;
   padding: 37px $mobile-side 39px;
 
   @media #{$tablet-width} {
@@ -6,6 +7,8 @@
   }
 
   @media #{$desktop-width} {
+    max-width: calc($max-content-width / 2);
+    margin-right: auto;
     padding: 60px $desktop-side;
   }
 }
