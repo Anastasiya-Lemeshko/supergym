@@ -1,3 +1,7 @@
-.tabs__tablinks {
-  display: flex;
+.tabs__tabcontent {
+  display: none;
+}
+
+.tabs__tabcontent--active {
+  display: block;
 }
