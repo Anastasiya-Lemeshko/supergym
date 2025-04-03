@@ -323,6 +323,22 @@
   }
 }
 
+@keyframes changing {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.price__value--animated,
+.price__bg--animated {
+  animation-name: changing;
+  animation-duration: 0.5s;
+}
+
 .price__button {
   width: 206px;
 

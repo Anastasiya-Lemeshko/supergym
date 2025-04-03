@@ -22,6 +22,26 @@
   display: block;
 }
 
+.video__iframe-wrap {
+  grid-area: 1 / 1 / -1 / -1;
+  width: 320px;
+  height: 170px;
+  z-index: 5;
+
+  @media #{$tablet-width} {
+    width: 270px;
+  }
+
+  @media #{$desktop-width} {
+    width: 360px;
+    height: 230px;
+  }
+}
+
+.video__iframe-wrap--hidden {
+  display: none;
+}
+
 .video__button {
   --border-color: rgba(237, 2, 51, 0.2);
   --circle-color: linear-gradient(96deg, #ed0233 0%, #ed0233 20%, #003eb7 95%, #003eb7 100%);
