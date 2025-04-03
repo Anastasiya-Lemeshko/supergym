@@ -75,7 +75,11 @@
   transition: background-color 0.4s, transform 0.4s, color 0.4s;
 }
 
-.juri__image-wrapper:focus + .juri__info,
+.juri__image-wrapper:focus {
+  outline: none;
+}
+
+.juri__slide:focus-visible .juri__info,
 .juri__slide:hover .juri__info {
   --bg-color: rgba(16, 38, 84, 0.89);
   --color: #{$white};
@@ -131,46 +135,39 @@
   background-color: $white;
 }
 
-.juri__button--prev,
-.juri__button--next {
-  @media #{$mobile-only} {
-    display: none;
-  }
-
+.juri__button {
   @media #{$tablet-width} {
-    width: 16px;
-    height: 32px;
-    top: 52%;
+    top: 49%;
   }
 
   @media #{$desktop-width} {
-    top: 51%;
+    top: 48%;
   }
 }
 
-.juri__button--prev::after,
-.juri__button--next::after {
+.juri__button::after {
   content: "";
 }
 
 .juri__button--prev {
   @media #{$tablet-width} {
-    left: 5px;
+    left: -11px;
   }
 
   @media #{$desktop-width} {
-    left: 2px;
+    left: -14px;
   }
 }
 
 .juri__button--next {
-  transform: rotate(180deg);
-
   @media #{$tablet-width} {
-    right: 5px;
+    right: -11px;
   }
 
   @media #{$desktop-width} {
-    right: 0;
+    right: -16px;
   }
 }
+
+
+

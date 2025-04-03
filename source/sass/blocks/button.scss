@@ -13,6 +13,7 @@
   border: 2px solid $white;
   background-color: $button-bg;
   cursor: pointer;
+  transition: color 0.3s, background 0.3s, border 0.3s;
 
   @media #{$tablet-width} {
     padding: 27px;
@@ -70,13 +71,15 @@
 
   &:hover {
     color: $white;
-    border: none;
+    border: 2px solid transparent;
+    border-image: linear-gradient(115deg, #ed0233 0%, #ed0233 20%, #003eb7 95%, #003eb7 100%) 1;
     background: linear-gradient(115deg, #ed0233 0%, #ed0233 20%, #003eb7 95%, #003eb7 100%);
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.7);
-    border: none;
+    border: 2px solid transparent;
+    border-image: linear-gradient(115deg, #ed0233 0%, #ed0233 20%, #003eb7 95%, #003eb7 100%) 1;
     background: linear-gradient(115deg, #ed0233 0%, #ed0233 20%, #003eb7 95%, #003eb7 100%);
   }
 

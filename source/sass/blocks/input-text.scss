@@ -1,0 +1,47 @@
+.input-text__input {
+  box-sizing: border-box;
+  padding: 4px 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: $white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $divider;
+  outline: 1px solid rgba(255, 255, 255, 0);
+  cursor: pointer;
+  transition: outline 0.3s, border 0.3s;
+
+  @media #{$tablet-width} {
+    font-weight: 400;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $white;
+  }
+
+  &:focus-visible {
+    padding: 4px 0 4px 3px;
+    margin-left: -3px;
+    outline: 1px solid $white;
+    border: none;
+  }
+
+  &:disabled {
+    color: rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+.input-text__input--error {
+  border-bottom: 1px solid $error-text;
+}
+
+.input-text__error {
+  min-height: 22px;
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: $error-text;
+}

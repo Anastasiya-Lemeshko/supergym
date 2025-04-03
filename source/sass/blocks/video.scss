@@ -40,6 +40,7 @@
   border: 2px solid var(--border-color);
   z-index: 1;
   cursor: pointer;
+  transition: border 0.3s;
 
   @media #{$desktop-width} {
     width: 100px;
@@ -50,6 +51,8 @@
     --border-color: #{$text-basic};
     --circle-color: #{$grey-basic};
     --triangle-color: #{$text-basic};
+
+    outline: none;
   }
 
   &:hover {
@@ -68,7 +71,9 @@
     --border-color: rgba(16, 38, 84, 0.4);
     --circle-color: #{$white};
     --triangle-color: rgba(16, 38, 84, 0.4);
+
     pointer-events: none;
+    cursor: default;
   }
 }
 
@@ -82,6 +87,7 @@
   height: 52px;
   background: var(--circle-color);
   border-radius: 50%;
+  transition: background-color 0.3s;;
 
   @media #{$desktop-width} {
     width: 72px;
@@ -97,6 +103,7 @@
   content: "";
   border: 5px solid transparent;
   border-left: 9px solid var(--triangle-color);
+  transition: border 0.3s;
 
   @media #{$desktop-width} {
     border: 8px solid transparent;

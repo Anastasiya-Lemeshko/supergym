@@ -7,3 +7,10 @@
   flex-direction: column;
   min-height: 100%;
 }
+
+.page__sections-wrapper {
+  @media #{$desktop-width} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
