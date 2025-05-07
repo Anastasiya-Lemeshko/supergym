@@ -1,5 +1,6 @@
 const openVisibleAccordeonContent = () => {
   const accordeonVisibleContent = document.querySelectorAll('.accordeon__item--active p');
+  //console.log(accordeonVisibleContent);
 
   accordeonVisibleContent.forEach((element) => {
     element.style.maxHeight = `${element.scrollHeight }px`;

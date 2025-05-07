@@ -42,7 +42,7 @@
           </ul>
           <p class="promo__city">Омск</p>
           <h1 class="promo__title">Фитнес <br>центр</h1>
-          <button class="promo__button button" type="button">Купить абонемент</button>
+          <a class="promo__button button" href="#price">Купить абонемент</a>
         </div>
         <div class="promo__image-wrapper">
           <picture>
@@ -92,7 +92,7 @@
         </button>
       </div>
     </section>
-    <section class="price" data-test="price">
+    <section class="price" data-test="price" id="price">
       <div class="price__wrapper">
         <h2 class="price__title title">Абонементы</h2>
         <div class="price__tabs tabs">
@@ -175,7 +175,7 @@
         <div class="games__image-wrapper">
           <picture>
             <source width="660" height="500" type="image/webp" media="(min-width: 1366px)" srcset="img/games/games-desktop@1x.webp 1x, img/games/games-desktop@2x.webp 2x">
-            <source width="378" height="348" type="image/jpg" media="(min-width: 768px)" srcset="img/games/games-tablet@1x.webp 1x, img/games/games-tablet@2x.webp 2x">
+            <source width="378" height="348" type="image/webp" media="(min-width: 768px)" srcset="img/games/games-tablet@1x.webp 1x, img/games/games-tablet@2x.webp 2x">
             <source width="290" height="290" type="image/webp" srcset="img/games/games-mobile@1x.webp 1x, img/games/games-mobile@2x.webp 2x">
             <source width="660" height="500" type="image/jpg" media="(min-width: 1366px)" srcset="img/games/games-desktop@1x.jpg 1x, img/games/games-desktop@2x.jpg 2x">
             <source width="378" height="348" type="image/jpg" media="(min-width: 768px)" srcset="img/games/games-tablet@1x.jpg 1x, img/games/games-tablet@2x.jpg 2x">
@@ -326,16 +326,16 @@
               </div>
             </div>
           </div>
-          <div class="juri__button juri__button--prev slider-button slider-button--prev swiper-button-prev">
+          <button class="juri__button juri__button--prev slider-button slider-button--prev swiper-button-prev" type="button">
             <svg class="juri__icon" aria-hidden="true" focusable="false" width="16" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 32">
               <use href="/__spritemap#sprite-swiper-arrow"></use>
             </svg>
-          </div>
-          <div class="juri__button juri__button--next slider-button slider-button--next swiper-button-next">
+          </button>
+          <button class="juri__button juri__button--next slider-button slider-button--next swiper-button-next" type="button">
             <svg class="juri__icon" aria-hidden="true" focusable="false" width="16" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 32">
               <use href="/__spritemap#sprite-swiper-arrow"></use>
             </svg>
-          </div>
+          </button>
         </div>
       </div>
     </section>
@@ -461,26 +461,33 @@
                 <li class="faq__item faq__item--active accordeon__item accordeon__item--active accordeon__item--default-visible">
                   <div class="faq__wysiwyg">
                     <button type="button">Как стать членом фитнес&#8209;центра?</button>
-                    <p>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При&nbsp;покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придёт вам на&nbsp;почту.
+                    <p>
+                      <span>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При&nbsp;покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придёт вам на&nbsp;почту.</span>
                     </p>
                   </div>
                 </li>
                 <li class="faq__item accordeon__item">
                   <div class="faq__wysiwyg">
                     <button type="button">Где можно посмотреть расписание?</button>
-                    <p>Расписание можно посмотреть на&nbsp;официальном сайте или на&nbsp;информационном стенде</p>
+                    <p>
+                      <span>Расписание можно посмотреть на&nbsp;официальном сайте или на&nbsp;информационном стенде</span>
+                    </p>
                   </div>
                 </li>
                 <li class="faq__item accordeon__item">
                   <div class="faq__wysiwyg">
                     <button type="button">Есть кулеры в центре? Предоставляются полотенца?</button>
-                    <p>Кулеры с&nbsp;водой есть в&nbsp;зоне отдыха и&nbsp;возле раздевалок. Полотенца предоставляются за&nbsp;дополнительную плату или их&nbsp;можно принести свои.</p>
+                    <p>
+                      <span>Кулеры с&nbsp;водой есть в&nbsp;зоне отдыха и&nbsp;возле раздевалок. Полотенца предоставляются за&nbsp;дополнительную плату или их&nbsp;можно принести свои.</span>
+                    </p>
                   </div>
                 </li>
                 <li class="faq__item accordeon__item">
                   <div class="faq__wysiwyg">
                     <button type="button">Сколько тренеров работает в клубе и какова их квалификация?</button>
-                    <p>В&nbsp;нашем клубе работают 46 тренеров. У&nbsp;всех тренеров имеется высшее спортивное образование и&nbsp;профильные сертификаты.</p>
+                    <p>
+                      <span>В&nbsp;нашем клубе работают 46 тренеров. У&nbsp;всех тренеров имеется высшее спортивное образование и&nbsp;профильные сертификаты.</span>
+                    </p>
                   </div>
                 </li>
               </ul>
@@ -491,19 +498,25 @@
                 <li class="faq__item accordeon__item">
                   <div class="faq__wysiwyg">
                     <button type="button">Какие документы нужны для оформления абонемента?</button>
-                    <p>Для оформления абонемента вам понадобится паспорт или&nbsp;другой документ, удостоверяющий личность. Если вы&nbsp;претендуете на&nbsp;льготный абонемент, также потребуется подтверждающий документ.</p>
+                    <p>
+                      <span>Для оформления абонемента вам понадобится паспорт или&nbsp;другой документ, удостоверяющий личность. Если вы&nbsp;претендуете на&nbsp;льготный абонемент, также потребуется подтверждающий документ.</span>
+                    </p>
                   </div>
                 </li>
                 <li class="faq__item accordeon__item">
                   <div class="faq__wysiwyg">
                     <button type="button">Что делать, если я потерял абонемент?</button>
-                    <p>Вам необходимо обратиться к администратору, чтобы восстановить абонемент.</p>
+                    <p>
+                      <span>Вам необходимо обратиться к администратору, чтобы восстановить абонемент.</span>
+                    </p>
                   </div>
                 </li>
                 <li class="faq__item accordeon__item">
                   <div class="faq__wysiwyg">
                     <button type="button">Какие услуги входят в абонемент?</button>
-                    <p>Абонемент включает доступ к&nbsp;тренажерному залу, групповым занятиям, раздевалкам, душевым.</p>
+                    <p>
+                      <span>Абонемент включает доступ к&nbsp;тренажерному залу, групповым занятиям, раздевалкам, душевым.</span>
+                    </p>
                   </div>
                 </li>
               </ul>
@@ -514,13 +527,17 @@
                 <li class="faq__item accordeon__item">
                   <div class="faq__wysiwyg">
                     <button type="button">Какое оборудование есть в тренажерном зале?</button>
-                    <p>В&nbsp;нашем тренажерном зале представлен широкий выбор силовых тренажеров, кардиотренажеров (беговые дорожки, эллиптические тренажеры, велотренажеры), зона свободных весов, а&nbsp;также специализированное оборудование для функционального тренинга.</p>
+                    <p>
+                      <span>В&nbsp;нашем тренажерном зале представлен широкий выбор силовых тренажеров, кардиотренажеров (беговые дорожки, эллиптические тренажеры, велотренажеры), зона свободных весов, а&nbsp;также специализированное оборудование для функционального тренинга.</span>
+                    </p>
                   </div>
                 </li>
                 <li class="faq__item accordeon__item">
                   <div class="faq__wysiwyg">
                     <button type="button">Есть ли в тренажерном зале дежурный тренер?</button>
-                    <p>Да, в&nbsp;тренажерном зале постоянно находится дежурный тренер, который может помочь вам освоиться с&nbsp;оборудованием, дать рекомендации по&nbsp;технике выполнения упражнений и&nbsp;ответить на&nbsp;ваши вопросы.</p>
+                    <p>
+                      <span>Да, в&nbsp;тренажерном зале постоянно находится дежурный тренер, который может помочь вам освоиться с&nbsp;оборудованием, дать рекомендации по&nbsp;технике выполнения упражнений и&nbsp;ответить на&nbsp;ваши вопросы.</span>
+                    </p>
                   </div>
                 </li>
               </ul>
@@ -531,19 +548,24 @@
                 <li class="faq__item accordeon__item">
                   <div class="faq__wysiwyg">
                     <button type="button">Нужно ли снимать украшения во время тренировки?</button>
-                    <p>Рекомендуется снимать украшения (кольца, браслеты, цепочки) во&nbsp;время тренировки, чтобы избежать травм и&nbsp;повреждения украшений.</p>
+                    <p>
+                      <span>Рекомендуется снимать украшения (кольца, браслеты, цепочки) во&nbsp;время тренировки, чтобы избежать травм и&nbsp;повреждения украшений.</span>
+                    </p>
                   </div>
                 </li>
                 <li class="faq__item accordeon__item">
                   <div class="faq__wysiwyg">
                     <button type="button">Можно ли пользоваться мобильным телефоном во время групповых занятий?</button>
-                    <p>Использование мобильных телефонов во&nbsp;время групповых занятий запрещено, чтобы не&nbsp;мешать другим участникам и&nbsp;тренеру.</p>
+                    <p>
+                      <span>Использование мобильных телефонов во&nbsp;время групповых занятий запрещено, чтобы не&nbsp;мешать другим участникам и&nbsp;тренеру.</span>
+                    </p>
                   </div>
                 </li>
                 <li class="faq__item accordeon__item">
                   <div class="faq__wysiwyg">
                     <button type="button">Можно ли использовать плавательные маски и трубки?</button>
-                    <p>Использование плавательных масок и&nbsp;трубок разрешено только для тех, кто умеет ими пользоваться и&nbsp;не&nbsp;создает помех другим посетителям.
+                    <p>
+                      <span>Использование плавательных масок и&nbsp;трубок разрешено только для тех, кто умеет ими пользоваться и&nbsp;не&nbsp;создает помех другим посетителям.</span>
                     </p>
                   </div>
                 </li>
@@ -587,16 +609,16 @@
               </div>
             </div>
           </div>
-          <div class="reviews__button reviews__button--prev slider-button slider-button--prev swiper-button-prev">
+          <button class="reviews__button reviews__button--prev slider-button slider-button--prev swiper-button-prev" type="button">
             <svg class="reviews__icon" aria-hidden="true" focusable="false" width="16" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 32">
               <use href="/__spritemap#sprite-swiper-arrow"></use>
             </svg>
-          </div>
-          <div class="reviews__button reviews__button--next slider-button slider-button--next swiper-button-next">
+          </button>
+          <button class="reviews__button reviews__button--next slider-button slider-button--next swiper-button-next" type="button">
             <svg class="reviews__icon" aria-hidden="true" focusable="false" width="16" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 32">
               <use href="/__spritemap#sprite-swiper-arrow"></use>
             </svg>
-          </div>
+          </button>
         </div>
       </div>
     </section>
@@ -615,7 +637,7 @@
                 </li>
                 <li class="trial__item input-text">
                   <label class="visually-hidden" for="phone">Телефон</label>
-                  <input class="trial__input trial__input--phone input-text__input" type="text" name="phone" id="phone" placeholder="Телефон" required>
+                  <input class="trial__input trial__input--phone input-text__input" type="phone" name="phone" id="phone" placeholder="Телефон" required>
                   <p class="trial__error trial__error--phone input-text__error"></p>
                 </li>
               </ul>

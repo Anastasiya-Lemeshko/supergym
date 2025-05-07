@@ -27,10 +27,10 @@ export const ALL__PRICES = {
 export const ERROR_TEXT = {
   'empty': 'Это обязательное поле',
   'name': 'Разрешены только буквы и пробелы',
-  'phone': 'Разрешены только цифры',
+  'phone': 'Введите не менее 11 цифр',
 };
 
 export const FIELD__STANDARD = {
-  'name': /^[a-zа-яё\s]+$/i,
-  'phone': /^\d+$/,
+  'name': /^[a-zа-яё\s]+$/i, ///^[a-zа-яё\s]*[^0-9][a-zа-яё\s]*$/i
+  'phone': /(.*\d.*){11}/,
 };

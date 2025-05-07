@@ -28,6 +28,10 @@
     width: 678px;
   }
 
+  @media (width >= 1068px) {
+    width: 978px;
+  }
+
   @media #{$desktop-width} {
     width: 1270px;
   }
@@ -38,9 +42,17 @@
   position: static;
   padding: 19px 30px 35px;
 
+  @media (width >= 590px) {
+    width: 624px;
+  }
+
   @media #{$tablet-width} {
     width: 630px;
     padding: 35px;
+  }
+
+  @media (width >= 1068px) {
+    width: 930px;
   }
 
   @media #{$desktop-width} {
@@ -50,6 +62,7 @@
 
 .juri__slide {
   display: grid;
+  overflow: hidden;
 }
 
 .juri__image-wrapper {

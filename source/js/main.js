@@ -1,14 +1,20 @@
-import './modules/constants.js';
-import './modules/scroll.js';
-import './modules/video-loading.js';
+import { addIframe } from './modules/video-loading.js';
+import { setPriceTabs } from './modules/tabs-price.js';
 import { initJuriSwiper } from './modules/slider-juri.js';
-import { initReviewSwiper } from './modules/slider-reviews.js';
+import { setFaqTabs } from './modules/tabs-faq.js';
 import { openVisibleAccordeonContent, setAccordeonToggles } from './modules/accordeon.js';
-import './modules/tabs-faq.js';
-import './modules/tabs-price.js';
-import './modules/trial-form-validate.js';
+import { initReviewSwiper } from './modules/slider-reviews.js';
+import { setFormValidate, formatName, formatPhone } from './modules/trial-form-validate.js';
 
-initJuriSwiper();
-initReviewSwiper();
-openVisibleAccordeonContent();
-setAccordeonToggles();
+document.addEventListener('DOMContentLoaded', () => {
+  addIframe();
+  setPriceTabs();
+  initJuriSwiper();
+  setFaqTabs();
+  openVisibleAccordeonContent();
+  setAccordeonToggles();
+  initReviewSwiper();
+  setFormValidate();
+  formatName();
+  formatPhone();
+});

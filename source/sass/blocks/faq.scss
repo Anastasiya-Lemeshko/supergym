@@ -274,6 +274,17 @@
   }
 }
 
+.faq__wysiwyg span {
+  display: block;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.faq__wysiwyg span + span {
+  margin-top: 10px;
+}
+
 .faq__item--active p {
   margin: 10px 0;
 

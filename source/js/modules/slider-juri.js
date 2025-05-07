@@ -17,8 +17,18 @@ const initJuriSwiper = () => {
         allowTouchMove: true,
       },
 
+      590: {
+        slidesPerView: 2,
+        allowTouchMove: true,
+      },
+
       768: {
         slidesPerView: 2,
+        allowTouchMove: false,
+      },
+
+      1068: {
+        slidesPerView: 3,
         allowTouchMove: false,
       },
 
