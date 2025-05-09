@@ -1,56 +1,58 @@
-# accelerator-first-project
-Стартовый репозиторий для работы над первым проектом в «Акселераторе» профессии «Фронтенд-разработчик»
+# Личный проект «Кэт энерджи»
 
-## Начало работы
+* Студент: [Анастасия Лемешко](https://up.htmlacademy.ru/adaptive/30/user/2388545).
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
 
-1. Установите node.js
-2. Проверьте версию node.js с помощью `node --version`
-3. Поддерживаемая версия сборки 18+
-4. Установите зависимости с помощью
+---
 
-```shell
-npm i
+**Обратите внимание, что папка с вашими исходными файлами для работы над проектом — `source/`.**
+
+Полезный файл:
+
+- [Contributing.md](Contributing.md) — руководство по внесению изменений.
+
+_Не удаляйте и не обращайте внимание на файлы и папки:_<br>
+_`.github`, `.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `package.json`, `package-lock.json`._
+
+---
+
+### Памятка
+
+#### 1. Зарегистрируйтесь на Гитхабе
+
+Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+
+#### 2. Создайте форк
+
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/2388545-cat-energy-30) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+
+<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808133-3a7ace00-a190-11e9-9d29-401b02036a9c.jpg">
+
+Получится вот так:
+
+<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808135-3a7ace00-a190-11e9-9a8d-7390b3784c65.jpg">
+
+#### 3. Клонируйте репозиторий на свой компьютер
+
+Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку «Code» в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
+
+<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808136-3a7ace00-a190-11e9-884f-24621e62b29a.jpg">
+
+Клонировать репозиторий можно так:
+
+```
+git clone SSH-адрес_вашего_форка
 ```
 
-5. Запустите проект с помощью 
+Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
 
-```shell
-npm run dev
-```
+#### 4. Начинайте обучение!
 
-6. Дополнительные команды для работы со сборкой
+---
 
-- `npm run convert-rastr`: создайте webp версии растровых изображений в папке `source/img/`;
-- `npm run dev` запускает сервер для разработки;
-- `npm run build` собирает оптимизированную версию проекта в папке `dist`;
-- `npm run preview` запускает сервер с оптимизированной версией;
-- спрайт с иконками собран из файлов в папке `source/img/sprite/`;
-- для доступа к спрайту из `html` используйте путь `href="/__spritemap#sprite-{название файла иконки}"`;
+<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
 
-7. В файле `index.html` в папке `source` описаны подсказки по структуре вашего проекта.
+Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
-## Самопроверки
-
-Тестирование Pixel Perfect
-
-Запустить тестирование вашего проекта можно с помощью
-
-```shell
-npm run test 
-```
-
-Тестовый фреймворк обращается к адресу `localhost:3000` поэтому сервер должен быть запущен с `npm run dev`, запускайте команду тестирования в новом терминале, не закрывая сервер с проектом.
-
-На windows масштаб дисплея в системе 100%
-
-
-В проекте используется множество дополнительных инструментов для самопроверки. Используйте их во время работы и перед отправкой вашего проекта:
-
-- `npm run w3c`: проверяет валидность HTML;
-- `npm run linthtml`: проверяет разметку по правилам linthtml;
-- `npm run html-validate`: проверяет HTML;
-- `npm run lint-bem`: проверяет БЭМ;
-- `npm run stylelint`: проверяет стили по правилам stylelint;
-- `npm run lint-js`: проверяет скрипты по правилам eslint;
-- `npm run ls-lint`: проверяет именование файлов и папок;
-- `npm run editorconfig`: проверяет editorconfig.
+[check-image]: https://github.com/htmlacademy-adaptive/2388545-cat-energy-30/workflows/Project%20check/badge.svg?branch=master
+[check-url]: https://github.com/htmlacademy-adaptive/2388545-cat-energy-30/actions
