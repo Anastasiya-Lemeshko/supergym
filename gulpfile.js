@@ -39,7 +39,7 @@ export function processMarkup () {
   return src(`${PATH_TO_SOURCE}**/*.html`)
     .pipe(nunjucksCompile())
     .pipe(htmlmin({ collapseWhitespace: !isDevelopment }))
-    .pipe(dest(PATH_TO_DIST))
+    .pipe(dest(PATH_TO_DIST));
     //.pipe(server.stream());
 }
 
