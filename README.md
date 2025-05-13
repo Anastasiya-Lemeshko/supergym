@@ -34,6 +34,9 @@
 -   HTML5
 -   SCSS
 -   JavaScript (ES6+)
+-   БЭМ-методология
+-   SVG-спрайты, WebP
+-   оптимизация графики, в т.ч. для Retina-дисплеев
 -   Git
 -   VS Code
 -   Figma
