@@ -40,7 +40,6 @@ export function processMarkup () {
     .pipe(nunjucksCompile())
     .pipe(htmlmin({ collapseWhitespace: !isDevelopment }))
     .pipe(dest(PATH_TO_DIST));
-    //.pipe(server.stream());
 }
 
 export function lintBem () {

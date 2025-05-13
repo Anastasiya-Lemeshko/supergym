@@ -2,6 +2,9 @@ node_modules
 build
 .idea
 .DS_Store
+.cache
+*.local
+package-lock.json
 raw/**/*.jpg
 raw/**/*.jpeg
 raw/**/*.png
@@ -9,3 +12,23 @@ raw/**/*.svg
 !raw/**/README.md
 **/vendor/**/*.js
 **/vendor/**/*.scss
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
